@@ -2,8 +2,9 @@
 
 export default function UploadForm() {
   function upload(ev) {
-    ev.PreventDefault;
+    ev.preventDefault();
     console.log(ev);
+    const files = ev.target.files;
   }
   return (
     <label className="bg-green-500 py-2 px-6 rounded-full font-bold inline-flex gap-2 border-2 border-purple-700/50 hover:bg-sky-700 cursor-pointer">
@@ -13,5 +14,5 @@ export default function UploadForm() {
       <span>Choose File</span>
       <input onChange={upload} type="file" className="hidden" />
     </label>
-  )
+  );
 }
