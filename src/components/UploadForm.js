@@ -1,10 +1,17 @@
 'use client';
 
 export default function UploadForm() {
-  function upload(ev) {
+  async function upload(ev) {
     ev.preventDefault();
     console.log(ev);
     const files = ev.target.files;
+    if (files.legnth > 0){
+      const file = files[0];
+      const response = await axios.postForm('/api/upload',{
+        file, 
+      });
+      console.log(response.data);
+    }
   }
   return (
     <label className="bg-green-500 py-2 px-6 rounded-full font-bold inline-flex gap-2 border-2 border-purple-700/50 hover:bg-sky-700 cursor-pointer">
