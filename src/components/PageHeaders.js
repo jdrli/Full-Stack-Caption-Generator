@@ -8,5 +8,5 @@ export default function PageHeaders() {
                 Just upload your video and we will do the rest!
             </h2>
         </section>
-    )
+    );
 }

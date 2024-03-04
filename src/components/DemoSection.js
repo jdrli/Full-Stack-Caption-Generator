@@ -11,5 +11,5 @@ export default function DemoSection(){
         <div className="bg-gray-800/50 w-[240px] h-[480px] rounded-xl">
         </div>
       </section>
-    )
+    );
 }
