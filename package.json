@@ -10,9 +10,15 @@
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.525.0",
+    "@aws-sdk/client-transcribe": "^3.525.0",
+    "@ffmpeg/ffmpeg": "^0.12.10",
+    "@ffmpeg/util": "^0.12.1",
+    "aws-crt": "^1.18.0",
     "axios": "^1.6.7",
     "fetch": "^1.1.0",
-    "next": "^14.1.2-canary.5",
+    "ffmpeg": "^0.0.4",
+    "file-loader": "^6.2.0",
+    "next": "^14.2.0-canary.0",
     "react": "^18",
     "react-dom": "^18",
     "uniqid": "^5.4.0"
